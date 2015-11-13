@@ -16,6 +16,15 @@
 xcode-select -p /Applications/Xcode-7.0.1.app
 ```
 
+Build the iOS archive with the fatass bitcode:
+
+```xcodebuild -configuration Release -scheme CrashReporter-iOS archive OTHER_CFLAGS='-fembed-bitcode'```
+
+The products will land somewhere in your derived data. Copy this into your BBSDK dir and build the SDK.
+
+
+OLD INSTRUCTIONS
+(These don't generate the fatass bitcode we need)
 - build
  ```
 xcodebuild -configuration Release -target 'Disk Image'
