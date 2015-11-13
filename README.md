@@ -23,7 +23,7 @@ Build the iOS archive with the fatass bitcode:
 The products will land somewhere in your derived data. Copy this into your BBSDK dir and build the SDK.
 
 
-OLD INSTRUCTIONS
+#OLD INSTRUCTIONS
 (These don't generate the fatass bitcode we need)
 - build
  ```
